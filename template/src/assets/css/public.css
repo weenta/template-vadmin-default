@@ -1,0 +1,99 @@
+.nav-header {
+    padding: 10px 5px;
+    background: #fff;
+}
+
+.content {
+    margin-top: 5px;
+    padding: 5px;
+    background: #fff;
+}
+
+.page-wrapper {
+    padding-top: 10px;
+    text-align: right;
+}
+
+
+/* 重置分类页面节点树样式 */
+.custom-tree-node {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-right: 8px;
+    line-height: 40px;
+    
+}
+.custom-tree-node .icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+    position: absolute;
+    left: 120px;
+    top: 7px;
+}
+.custom-tree-node .sort{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    position: absolute;
+    left: 200px;
+}
+
+.el-tree-node__content {
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+}
+
+/* 重置 layout页默认样式  */
+.el-submenu__title i{
+	color: #ffffff;
+}
+
+.el-aside {
+    width: 200px!important;
+    background-color: #545c64;
+}
+
+.el-menu {
+    width: 200px;
+}
+
+.el-main {
+	margin: 5px;
+    position: relative;
+    padding: 5px;
+}
+
+.sub-nav-item {
+	text-indent: 50px;
+}
+
+.el-submenu__title i{
+	color: #ffffff;
+}
+
+.el-menu-item {
+    text-indent: 20px;
+    background: rgba(84,92,100,0.7);
+}
+
+.el-header {
+    height: 70px!important;
+	background: #545c64;
+	color: #fff;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #666666;
+	box-sizing: border-box;
+}
