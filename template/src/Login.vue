@@ -3,14 +3,14 @@
     <el-form v-loading='loading' ref='form' :model='form' :rules='rule' label-position='left' label-width='0px' class='login-form'>
       <h3 class='title'>登录</h3>
       <el-form-item prop='account' class='login-form-item'>
-        <el-input id='input-login' v-model='form.account' class='input-large' type='text' auto-complete='off' placeholder='账号' @keyup.native.enter='handleSubmit(&apos;form&apos;)'/>
+        <el-input id='input-login' v-model='form.account' class='input-large' type='text' auto-complete='off' placeholder='账号' @keyup.native.enter='handleSubmit(form)'/>
       </el-form-item>
       <el-form-item prop='password' class='login-form-item'>
-        <el-input v-model='form.password' type='password' class='input-large' auto-complete='off' placeholder='密码' @keyup.native.enter='handleSubmit(&apos;form&apos;)'/>
+        <el-input v-model='form.password' type='password' class='input-large' auto-complete='off' placeholder='密码' @keyup.native.enter='handleSubmit(form)'/>
       </el-form-item>
       <el-checkbox v-model='checked' checked style='margin:0px 0px 35px 0px;'>记住密码</el-checkbox>
       <el-form-item style='width:100%;'>
-        <el-button type='primary' style='width:100%;' @click.native.prevent='handleSubmit(&apos;form&apos;)'>登录</el-button>
+        <el-button type='primary' style='width:100%;' @click.native.prevent='handleSubmit(form)'>登录</el-button>
       </el-form-item>
     </el-form>
   </div>

@@ -10,7 +10,7 @@
         </el-col>
         <el-col :span='4'>
           <el-select v-model='value' placeholder='商品分类' @change='getList'>
-            <el-option v-for='item in categoryList' :key='item.id' :label='item.label' :value='item.id' :class='[&apos;option-&apos;+item.type]'/>
+            <el-option v-for='item in categoryList' :key='item.id' :label='item.label' :value='item.id' :class='["option-"+item.type]'/>
           </el-select>
         </el-col>
         <el-col :span='4'>
