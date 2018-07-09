@@ -76,11 +76,7 @@ export default {
       // 获取所选节点
       let hasChosen = this.$refs.tree.getCheckedNodes()
       if (hasChosen.length === 0) {
-        this.$notify({
-          title: '提示',
-          message: '没有选中分类',
-          type: 'warning'
-        })
+        this.$cs.warn('没有选中分类')
         return
       }
       let id = ''
