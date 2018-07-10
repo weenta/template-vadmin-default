@@ -28,7 +28,7 @@ export default new Router({
       path: '/',
       component: Layout,
       name: '商品管理',
-      iconCls: 'el-icon-goods',
+      iconCls: 'box-open',
       children: [
         { path: '/goodson', name: '上架商品', component: GoodsOn },
         { path: '/goodsoff', name: '下架商品', component: GoodsOff },
@@ -39,7 +39,7 @@ export default new Router({
       path: '/',
       component: Layout,
       name: '会员管理',
-      iconCls: 'el-icon-mobile-phone',
+      iconCls: 'user',
       children: [
         { path: '/member', name: '会员列表', component: Member }
       ]
@@ -48,7 +48,7 @@ export default new Router({
       path: '/',
       component: Layout,
       name: '订单管理',
-      iconCls: 'el-icon-tickets',
+      iconCls: 'th-list',
       children: [
         { path: '/order', name: '商品订单', component: Order },
       ]
@@ -57,7 +57,7 @@ export default new Router({
       path: '/',
       component: Layout,
       name: '系统设置',
-      iconCls: 'el-icon-setting',
+      iconCls: 'cog',
       children: [
         { path: '/setting', name: '密码设置', component: Setting },
       ]

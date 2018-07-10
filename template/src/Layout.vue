@@ -33,7 +33,7 @@
             <!-- 一级导航 -->
             <el-submenu v-for='(nav,index) in sidebarNav' :key='index' :index='nav.name'>
               <template slot='title'>
-                <i :class='nav.iconCls'/>
+                <font-awesome-icon :icon='nav.iconCls' class='nav-icon' />
                 <span slot='title'>{{ nav.name }}</span>
               </template>
               <!-- 二级导航 -->

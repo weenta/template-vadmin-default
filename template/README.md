@@ -34,6 +34,3 @@
 |__static
 ...
 ```
-
-## TODO
-plugin 
