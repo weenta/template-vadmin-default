@@ -53,8 +53,8 @@
 }
 
 /* 重置 layout页默认样式  */
-.el-submenu__title i{
-	color: #ffffff;
+.nav-icon {
+    margin-right: 5px;
 }
 
 .el-aside {
