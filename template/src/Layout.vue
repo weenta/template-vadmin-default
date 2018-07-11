@@ -37,7 +37,7 @@
                 <span slot='title'>{{ nav.name }}</span>
               </template>
               <!-- 二级导航 -->
-              <el-menu-item v-for='child in nav.children' :key='child.name' :index='child.path'>{{ child.name }}</el-menu-item>
+              <el-menu-item v-for='child in nav.children' :index='child.path' :key='child.name'>{{ child.name }}</el-menu-item>
             </el-submenu>
           </el-menu>
         </el-aside>

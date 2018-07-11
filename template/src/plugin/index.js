@@ -27,4 +27,12 @@ export default {
     }
     Element.Notification(options)
   },
+
+  confirm(msg) {
+    return Element.MessageBox.confirm(msg, '提示', {
+      confirmButtonText: '确定',
+      cancelButtonText: '取消',
+      type: 'warning'
+    })
+  }
 }
