@@ -17,14 +17,15 @@
 |   |__api                       API目录
 |   |    |__ config.js              API配置文件
 |   |    |__ index.js               API文件
-|   |__ assets                   资源目录
+|   |__assets                   资源目录
 |   |    |__ css                   
 |   |    |__ images                   
-|   |__components                组件目录
+|   |__mixin                    mixin
 |   |__mock                      数据模拟目录
 |   |    |__ mockApi.js             mock接口
 |   |    |__ mockData.js            mock数据
 |   |__ pages                    页面目录
+|   |__ plugin                   插件目录
 |   |__ router                   路由目录
 |   |__ vuex                     vuex目录
 |   |__ App.vue                  根组件
@@ -34,3 +35,6 @@
 |__static
 ...
 ```
+
+## font-awesome free/solid
+https://fontawesome.com/icons?d=listing&s=solid&m=free
