@@ -41,6 +41,7 @@ module.exports = {
     "no-unused-vars": ["warn"],
     "no-console": ["warn"],
     "vue/max-attributes-per-line": ["off"],
+    "vue/comment-directive": ["off"],
     "vue/require-prop-types": ["off"],
     "vue/html-quotes": ["error", "single"]
   },
