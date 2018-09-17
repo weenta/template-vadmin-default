@@ -46,7 +46,6 @@
 </template>
 
 <script>
-import { GOODS_LIST_ON, CATEGORY_LIST, } from '@/api'
 export default {
   data() {
     return {
@@ -71,7 +70,7 @@ export default {
     // 获取商品列表
     getList() {
       this.loading = true
-      GOODS_LIST_ON().then(res=>{
+      this.$api.GOODS_LIST_ON().then(res=>{
         this.loading = false
         if (res.data.code === 200) {
           this.total = res.data.data.total
@@ -83,7 +82,7 @@ export default {
 
     // 获取分类列表
     getCategoryList() {
-      CATEGORY_LIST().then(res=>{
+      this.$api.CATEGORY_LIST().then(res=>{
         if (res.data.code === 200) {
           this.category = res.data.data
           this._formatCategoryList(res.data.data)

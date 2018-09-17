@@ -41,7 +41,6 @@
 </template>
 
 <script>
-import { GOODS_LIST_OFF } from '@/api'
 export default {
   data() {
     return {
@@ -63,7 +62,7 @@ export default {
     // 获取商品列表
     getList() {
       this.loading = true
-      GOODS_LIST_OFF().then(res=>{
+      this.$api.GOODS_LIST_OFF().then(res=>{
         this.loading = false
         if (res.data.code === 200) {
           this.total = res.data.data.total

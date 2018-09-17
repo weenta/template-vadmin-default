@@ -1,16 +1,18 @@
-import { axios, qs, BASE } from './config'
+import goods from './goods'
+import member from './member'
+import order from './order'
 
-// 获取会员列表
-export const MEMBER_LIST = params => { return axios.get(`${BASE}/member_list`, { params }) }
+/**
+ * API 入口
+ */
+export default {
+  // 商品模块
+  ...goods,
 
-// 获取订单列表
-export const ORDER_LIST = params => { return axios.get(`${BASE}/order_list`, { params }) }
+  // 会员模块
+  ...member,
 
-// 获取上架商品列表
-export const GOODS_LIST_ON = params => { return axios.get(`${BASE}/goods_list_on`, { params }) }
-
-// 获取下架商品列表
-export const GOODS_LIST_OFF = params => { return axios.get(`${BASE}/goods_list_off`, { params }) }
-
-// 分类列表
-export const CATEGORY_LIST = params => { return axios.get(`${BASE}/category_list`, { params }) }
+  // 订单模块
+  ...order,
+  
+}

@@ -35,7 +35,6 @@
 </template>
 
 <script>
-import { MEMBER_LIST } from '@/api'
 
 export default {
   data() {
@@ -55,7 +54,7 @@ export default {
     // 获取列表
     getList() {
       this.loading = true
-      MEMBER_LIST().then(res=>{
+      this.$api.MEMBER_LIST().then(res=>{
         this.loading = false
         if (res.data.code === 200) {
           this.total = res.data.data.total

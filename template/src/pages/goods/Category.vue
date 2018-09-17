@@ -29,7 +29,6 @@
 </template>
 
 <script>
-import { CATEGORY_LIST } from '@/api'
 export default {
   data() {
     return {
@@ -45,7 +44,7 @@ export default {
   methods: {
     getList() {
       this.loading = true
-      CATEGORY_LIST().then(res=>{
+      this.$api.CATEGORY_LIST().then(res=>{
         this.loading = false
         if (res.data.code === 200) {
           this.list = JSON.parse(JSON.stringify(res.data.data))
@@ -62,13 +61,9 @@ export default {
     // 操作-删除
     remove(node,data) {
       let content = '删除分类: ' + data.label + ' ?'
-      this.$confirm(content, '删除', {
-        confirmButtonText: '确定',
-        cancelButtonText: '取消',
-        type: 'warning'
-      }).then(() => {
+      this.$cs.confirm(content).then(()=>{
         this.getList()
-      }).catch(() => {})
+      })
     },
 
     // 删除-批量
@@ -84,13 +79,9 @@ export default {
         id += (e.id + ',')
       })
            
-      this.$confirm('删除所选分类?', '提示', {
-        confirmButtonText: '确定',
-        cancelButtonText: '取消',
-        type: 'warning'
-      }).then(() => {
+      this.$cs.confirm('删除所选分类?').then(()=>{
         this.getList()
-      }).catch(() => {})
+      })
     },
 
     // 生成节点树

@@ -36,7 +36,6 @@
 </template>
 
 <script>
-import { ORDER_LIST } from '@/api'
 export default {
   data() {
     return {
@@ -57,7 +56,7 @@ export default {
     // 获取订单列表
     getList() {
       this.loading = true
-      ORDER_LIST().then(res=>{
+      this.$api.ORDER_LIST().then(res=>{
         this.loading = false
         if (res.data.code === 200) {
           this.total = res.data.data.total

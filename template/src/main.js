@@ -15,6 +15,8 @@ import { faBoxOpen, faUser, faThList, faCog } from '@fortawesome/free-solid-svg-
 library.add(faBoxOpen, faUser, faThList, faCog)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
+import api from './api'
+
 Vue.use(Element, { size: 'small' })
 
 // 加载模拟数据 
@@ -23,7 +25,10 @@ import Mock from './mock/mockApi'
 
 var myPlugin = {}
 myPlugin.install = function (Vue, options) {
+  // $cs 封装Element Notification MessageBox模块，简化调用
   Vue.prototype.$cs = cs
+  // $api api接口
+  Vue.prototype.$api = api
 }
 
 Vue.use(myPlugin)
