@@ -36,5 +36,37 @@
 ...
 ```
 
-## font-awesome free/solid
+## 三方库 
+### element-ui
+http://element-cn.eleme.io/#/zh-CN/component/installation
+
+### 图标font-awesome free/solid
 https://fontawesome.com/icons?d=listing&s=solid&m=free
+
+### mockjs
+http://mockjs.com
+
+## 自定义ui插件
+element-ui MessageBox,Notification模块的二次封装，简化调用
+- `$cs.error`
+- `$cs.success`
+- `$cs.warn`
+- `$cs.confirm`
+```js
+// $cs成功提示
+this.$cs.success('这是一条成功的提示消息')
+
+// 封装前element-ui成功提示
+this.$notify({
+    title: 'Success',
+    message: '这是一条成功的提示消息',
+    type: 'success'
+});
+
+```
+
+## 自定义api插件
+- `$api`
+
+## 其他
+兼容ie11

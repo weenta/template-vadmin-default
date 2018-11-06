@@ -55,15 +55,14 @@ export default {
 
     //操作-编辑
     edit(node,data) {
-
+      
     },
     
     // 操作-删除
     remove(node,data) {
       let content = '删除分类: ' + data.label + ' ?'
       this.$cs.confirm(content).then(()=>{
-        this.getList()
-      })
+      }).catch(()=>{})
     },
 
     // 删除-批量

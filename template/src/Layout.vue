@@ -140,7 +140,7 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  overflow: hidden;
+  overflow-y: scroll;
   background-color: #f1f1f1;
 }
 </style>

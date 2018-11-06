@@ -25,7 +25,7 @@ import Mock from './mock/mockApi'
 
 var myPlugin = {}
 myPlugin.install = function (Vue, options) {
-  // $cs 封装Element Notification MessageBox模块，简化调用
+  // $cs 封装Element-ui Notification,MessageBox模块，简化调用
   Vue.prototype.$cs = cs
   // $api api接口
   Vue.prototype.$api = api
