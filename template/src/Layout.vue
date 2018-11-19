@@ -42,7 +42,7 @@
           </el-menu>
         </el-aside>
         <!-- 主内容区 -->
-        <el-main>
+        <el-main :style="{ height: mainHeight + 'px' }">
           <router-view />
         </el-main>
       </el-container>
@@ -73,6 +73,11 @@ export default {
     activePage() {
       let path = this.$route.fullPath
       return path
+    },
+
+    // el-main 高度
+    mainHeight() {
+      return window.innerHeight - 80
     }
   },
 
@@ -143,4 +148,5 @@ export default {
   overflow-y: scroll;
   background-color: #f1f1f1;
 }
+
 </style>

@@ -17,7 +17,7 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 import api from './api'
 
-Vue.use(Element, { size: 'small' })
+Vue.use(Element, { size: 'mini' })
 
 // 加载模拟数据 
 // 调用真实API时 注释掉此行即可 

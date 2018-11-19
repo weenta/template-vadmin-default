@@ -60,15 +60,16 @@
 .el-aside {
     width: 200px!important;
     background-color: #545c64;
+    overflow-x: hidden;
 }
 
 .el-menu {
-    width: 200px;
+    width: 100%;
 }
 
 .el-main {
-	margin: 5px;
     position: relative;
+	margin: 5px;
     padding: 5px;
 }
 

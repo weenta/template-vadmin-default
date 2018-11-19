@@ -14,7 +14,7 @@
       </el-row>    
     </div>
     <div class='content'>
-      <el-table v-loading='loading' :data='list' style='width: 100%;' >
+      <el-table v-loading='loading' :data='list' :max-height="tableHeight" >
         <el-table-column type='index' width='50'/>
         <el-table-column prop='name' label='商品名' width='200'/>
         <el-table-column label='商品图片' width='180'>
@@ -51,6 +51,11 @@ export default {
       goodsName: '',
       goodsNum: '',
 
+    }
+  },
+  computed: {
+    tableHeight() {
+      return window.innerHeight - 200
     }
   },
 
