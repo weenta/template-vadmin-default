@@ -9,6 +9,7 @@ import './assets/css/public.css'
 import Element from 'element-ui'
 import cs from './plugin'
 import mixin from './mixin'
+// 第三方图标库
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faBoxOpen, faUser, faThList, faCog } from '@fortawesome/free-solid-svg-icons'
